@@ -5,6 +5,7 @@ import { changeValue, setFormErrors } from "../features/form/formSlice";
 import { useNavigate } from "react-router-dom";
 import { validateForm } from "../component/FormValidate";
 const StepOne = () => {
+  const base = import.meta.env.BASE_URL
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { formPage1, errors } = useSelector((store) => store.form);
@@ -18,7 +19,7 @@ const StepOne = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       dispatch(nextTwo());
-      navigate("/page/2");
+      navigate(`${base}/page/2`);
     } else {
       dispatch(setFormErrors(validationErrors));
     }
