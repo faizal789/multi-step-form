@@ -62,7 +62,7 @@ const StepTwo = () => {
                 />
                 <div className="flex flex-col max-lg:flex-row max-lg:items-center justify-between py-4 pl-3 w-36 rounded-md h-40 border peer-checked:bg-magnolia-neutral peer-checked:border-purplish-blue-primary max-lg:w-full max-lg:h-fit max-lg:justify-start max-lg:gap-4">
                   <img
-                    src="../../assets/images/icon-arcade.svg"
+                    src="assets/images/icon-arcade.svg"
                     width={35}
                     alt="icon"
                   />
@@ -104,7 +104,7 @@ const StepTwo = () => {
                 />
                 <div className="flex flex-col max-lg:flex-row max-lg:items-center justify-between py-4 pl-3 w-36 rounded-md h-40 border peer-checked:bg-magnolia-neutral peer-checked:border-purplish-blue-primary max-lg:w-full max-lg:h-fit max-lg:justify-start max-lg:gap-4">
                   <img
-                    src="../../assets/images/icon-advanced.svg"
+                    src="assets/images/icon-advanced.svg"
                     width={35}
                     alt="icon"
                   />
@@ -146,7 +146,7 @@ const StepTwo = () => {
                 />
                 <div className="flex flex-col max-lg:flex-row max-lg:items-center justify-between py-4 pl-3 w-36 rounded-md h-40 border peer-checked:bg-magnolia-neutral peer-checked:border-purplish-blue-primary max-lg:w-full max-lg:h-fit max-lg:justify-start max-lg:gap-4">
                   <img
-                    src="../../assets/images/icon-pro.svg"
+                    src="assets/images/icon-pro.svg"
                     width={35}
                     alt="icon"
                   />
