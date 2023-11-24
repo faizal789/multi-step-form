@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-marine-blue-primary text-3xl font-bold;
+  }
+  h2 {
+    @apply font-medium text-white;
+  }
+
+  p {
+    @apply text-cool-gray-neutral font-normal;
+  }
+
+
+}
+
+@layer components {
+  .btn {
+    @apply bg-marine-blue-primary py-2 px-4 font-medium text-white rounded-md;
+  }
+}
