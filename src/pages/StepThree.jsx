@@ -4,7 +4,6 @@ import { nextFour, prevTwo } from "../features/step/stepSlice";
 import { motion } from "framer-motion";
 import { checkboxToggleAddOns } from "../features/form/formSlice";
 const StepThree = () => {
-  const base = import.meta.env.BASE_URL
   const dispatch = useDispatch();
   const { formPage3, checkboxPlanValue } = useSelector((store) => store.form);
 
@@ -97,7 +96,7 @@ const StepThree = () => {
           </label>
         </div>
         <div className="max-lg:flex bg-white max-lg:w-screen w-full h-16 absolute bottom-0 left-0 items-center justify-between px-7">
-          <Link to={`${base}/page/2`}>
+          <Link to="/page/2">
             <button
               onClick={() => dispatch(prevTwo())}
               className="text-cool-gray-neutral hover:text-marine-blue-primary absolute bottom-0 left-0 py-2 max-lg:static"
@@ -105,7 +104,7 @@ const StepThree = () => {
               Go Back
             </button>
           </Link>
-          <Link to={`${base}/page/4`}>
+          <Link to="/page/4">
             <button
               onClick={() => dispatch(nextFour())}
               className="btn absolute hover:opacity-80 transition-transform hover:scale-105 bottom-0 right-0 max-lg:static"

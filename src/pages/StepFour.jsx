@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import TotalBill from "../component/totalBill";
 
 const StepFour = () => {
-  const base = import.meta.env.BASE_URL
   const dispatch = useDispatch();
   const formData = useSelector((store) => store.form);
 
@@ -60,7 +59,7 @@ const StepFour = () => {
           </div>
         </div>
         <div className="max-lg:flex bg-white max-lg:w-screen w-full h-16 absolute bottom-0 left-0 items-center justify-between px-7">
-          <Link to={`${base}/page/3`}>
+          <Link to="/page/3">
             <button
               onClick={() => dispatch(prevThree())}
               className="text-cool-gray-neutral hover:text-marine-blue-primary absolute bottom-0 left-0 py-2 max-lg:static"
@@ -68,7 +67,7 @@ const StepFour = () => {
               Go Back
             </button>
           </Link>
-          <Link to={`${base}/page/5`}>
+          <Link to="/page/5">
             <button
               className="btn absolute hover:opacity-80 transition-transform hover:scale-105 bg-purplish-blue-primary bottom-0 right-0 max-lg:static"
             >

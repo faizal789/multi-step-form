@@ -10,16 +10,15 @@ import StepFour from "./pages/StepFour";
 import StepFive from "./pages/StepFive";
 
 const AnimatedRoutes = () => {
-  const base = import.meta.env.BASE_URL
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path={base} element={<StepOne></StepOne>}></Route>
-        <Route path={`${base}/page/2`} element={<StepTwo></StepTwo>}></Route>
-        <Route path={`${base}/page/3`} element={<StepThree></StepThree>}></Route>
-        <Route path={`${base}/page/4`} element={<StepFour></StepFour>}></Route>
-        <Route path={`${base}/page/5`} element={<StepFive></StepFive>}></Route>
+        <Route path="/" element={<StepOne></StepOne>}></Route>
+        <Route path="/page/2" element={<StepTwo></StepTwo>}></Route>
+        <Route path="/page/3" element={<StepThree></StepThree>}></Route>
+        <Route path="/page/4" element={<StepFour></StepFour>}></Route>
+        <Route path="/page/5" element={<StepFive></StepFive>}></Route>
       </Routes>
     </AnimatePresence>
     
