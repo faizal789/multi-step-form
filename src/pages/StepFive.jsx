@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const StepFive = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,7 +13,7 @@ const StepFive = () => {
       <div className="flex flex-col gap-4">
         <img
           className="mx-auto"
-          src="/assets/images/icon-thank-you.svg"
+          src={`${baseUrl}./assets/images/icon-thank-you.svg`}
           width={100}
           alt="icon thank you"
         />
