@@ -19,8 +19,8 @@ export default {
         'sans': ['Ubuntu','sans-serif']
       },
       backgroundImage :{
-        'sidebar-desktop' : "url('/assets/images/bg-sidebar-desktop.svg')",
-        'sidebar-mobile' : "url('/assets/images/bg-sidebar-mobile.svg')"
+        'sidebar-desktop' : "url('/images/bg-sidebar-desktop.svg')",
+        'sidebar-mobile' : "url('/images/bg-sidebar-mobile.svg')"
       }
       
     },
