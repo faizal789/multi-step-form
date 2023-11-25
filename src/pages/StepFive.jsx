@@ -9,13 +9,11 @@ const StepFive = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className="w-full h-full flex justify-center items-center"
-    >
-
-      
+    >  
       <div className="flex flex-col gap-4">
         <img
           className="mx-auto"
-          src={`${baseUrl}./assets/images/icon-thank-you.svg`}
+          src={`${baseUrl}./images/icon-thank-you.svg`}
           width={100}
           alt="icon thank you"
         />
