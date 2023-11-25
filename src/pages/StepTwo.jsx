@@ -6,7 +6,6 @@ import { changeValue, checkboxTogglePlan } from "../features/form/formSlice";
 
 const StepTwo = () => {
   const baseUrl = import.meta.env.BASE_URL;
-  console.log(baseUrl);
   const dispatch = useDispatch();
   const { formPage2, checkboxPlanValue } = useSelector((store) => store.form);
 
