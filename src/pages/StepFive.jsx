@@ -10,6 +10,8 @@ const StepFive = () => {
       transition={{ duration: 0.5 }}
       className="w-full h-full flex justify-center items-center"
     >
+
+      
       <div className="flex flex-col gap-4">
         <img
           className="mx-auto"
