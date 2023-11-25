@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { changeValue, checkboxTogglePlan } from "../features/form/formSlice";
 
 const StepTwo = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const dispatch = useDispatch();
   const { formPage2, checkboxPlanValue } = useSelector((store) => store.form);
 
@@ -62,7 +63,7 @@ const StepTwo = () => {
                 />
                 <div className="flex flex-col max-lg:flex-row max-lg:items-center justify-between py-4 pl-3 w-36 rounded-md h-40 border peer-checked:bg-magnolia-neutral peer-checked:border-purplish-blue-primary max-lg:w-full max-lg:h-fit max-lg:justify-start max-lg:gap-4">
                   <img
-                    src="images/icon-arcade.svg"
+                    src={`${baseUrl}images/icon-arcade.svg`}
                     width={35}
                     alt="icon"
                   />
@@ -104,7 +105,7 @@ const StepTwo = () => {
                 />
                 <div className="flex flex-col max-lg:flex-row max-lg:items-center justify-between py-4 pl-3 w-36 rounded-md h-40 border peer-checked:bg-magnolia-neutral peer-checked:border-purplish-blue-primary max-lg:w-full max-lg:h-fit max-lg:justify-start max-lg:gap-4">
                   <img
-                    src="images/icon-advanced.svg"
+                    src={`${baseUrl}images/icon-advanced.svg`}
                     width={35}
                     alt="icon"
                   />
@@ -146,7 +147,7 @@ const StepTwo = () => {
                 />
                 <div className="flex flex-col max-lg:flex-row max-lg:items-center justify-between py-4 pl-3 w-36 rounded-md h-40 border peer-checked:bg-magnolia-neutral peer-checked:border-purplish-blue-primary max-lg:w-full max-lg:h-fit max-lg:justify-start max-lg:gap-4">
                   <img
-                    src="images/icon-pro.svg"
+                    src={`${baseUrl}images/icon-pro.svg`}
                     width={35}
                     alt="icon"
                   />
